@@ -1,0 +1,198 @@
+.admin-audit-page {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.admin-audit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 30px;
+}
+
+.admin-audit-count {
+  color: #777777;
+
+  font-size: 14px;
+}
+
+.admin-audit-section {
+  padding: 25px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+}
+
+.admin-audit-toolbar {
+  display: flex;
+  align-items: flex-end;
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.admin-audit-search,
+.admin-audit-filter {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.admin-audit-search {
+  width: 100%;
+  max-width: 420px;
+}
+
+.admin-audit-filter {
+  min-width: 200px;
+}
+
+.admin-audit-search label,
+.admin-audit-filter label {
+  font-weight: 600;
+}
+
+.admin-audit-search input,
+.admin-audit-filter select {
+  padding: 10px 12px;
+
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+
+  background-color: #ffffff;
+}
+
+.admin-audit-showing {
+  margin-left: auto;
+  padding-bottom: 10px;
+
+  color: #777777;
+
+  font-size: 13px;
+}
+
+.admin-audit-table-container {
+  overflow-x: auto;
+}
+
+.admin-audit-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.admin-audit-table th,
+.admin-audit-table td {
+  padding: 14px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  text-align: left;
+  vertical-align: middle;
+}
+
+.admin-audit-table th {
+  background-color: #fafafa;
+
+  font-size: 13px;
+}
+
+.admin-audit-user {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 180px;
+}
+
+.admin-audit-user span {
+  color: #777777;
+
+  font-size: 12px;
+}
+
+.admin-audit-action {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  background-color: #eeeeee;
+
+  color: #444444;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.admin-audit-description {
+  min-width: 250px;
+
+  color: #555555;
+
+  line-height: 1.5;
+}
+
+.admin-audit-date {
+  min-width: 170px;
+
+  color: #777777;
+
+  font-size: 13px;
+}
+
+.admin-audit-empty {
+  padding: 50px 20px;
+
+  text-align: center;
+
+  color: #666666;
+}
+
+.admin-audit-message {
+  padding: 40px 0;
+
+  text-align: center;
+
+  color: #666666;
+}
+
+@media (max-width: 750px) {
+
+  .admin-audit-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-audit-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-audit-search {
+    max-width: none;
+  }
+
+  .admin-audit-filter {
+    min-width: 0;
+  }
+
+  .admin-audit-showing {
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+}
